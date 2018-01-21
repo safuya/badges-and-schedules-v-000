@@ -3,4 +3,8 @@ def badge_maker(name)
 end
 
 def batch_badge_creator(attendees)
+  for name in attendees
+    badges << badge_maker(name)
+  end
+  badges
 end
